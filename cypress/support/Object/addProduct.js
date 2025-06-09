@@ -29,7 +29,7 @@ class addProduct {
         cy.get(this.firstName).type('John')
         cy.get(this.lastName).type('Doe')
         cy.get(this.postalCode).type('12345')
-        cy.wait(500)
+        cy.wait(1000)
         cy.get(this.continue).should('be.visible').click();
         cy.wait(500)
         cy.get(this.finish).should('be.visible').click();

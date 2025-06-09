@@ -1,3 +1,4 @@
+// file object
 class addProduct {
     //Object CheckOut
 

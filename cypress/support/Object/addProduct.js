@@ -1,9 +1,6 @@
 class addProduct {
     //Object CheckOut
 
-    // addItem = '[data-test="add-to-cart-sauce-labs-backpack"]'
-    // IconAddCard = '.btn.btn_primary.btn_small.btn_inventory';
-    // iconShoppingCart = '.shopping_cart_link';
     goToCart = '[data-test="shopping-cart-link"]';
     checkoutBtn = '[data-test="checkout"]';
     firstName = '[data-test="firstName"]';
@@ -13,7 +10,7 @@ class addProduct {
     finish = '[data-test="finish"]';
 
 
-    // Aksi Klik di Add Product
+    // Aksi Checkout
 
     additem() {
         cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
@@ -37,29 +34,5 @@ class addProduct {
         cy.get(this.finish).should('be.visible').click();
     }
 
-    // goToCart() {
-    //     cy.get(this.goToCart).should('be.visible').click();
-    // }
-
-    // checkout() {
-    //     cy.get(this.checkoutBtn).should('be.visible').click();
-    // }
-
-    // toCart() {
-    //     // cy.get(this.IconAddCard).eq(5).click();
-    //     // cy.get(this.IconAddCard).eq(1).click();
-    //     // cy.get(this.IconAddCard).eq(2).click();
-    //     // cy.get(this.iconShoppingCart).should('be.visible').and('contain.text', '3');
-    //     // cy.get(this.iconShoppingCart).click();
-    //     // 
-    //     // cy.get(this.IconAddCard).eq(5).click();
-    //     // cy.get(this.IconAddCard).eq(1).click();
-    //     // cy.get(this.IconAddCard).eq(2).click();
-    //     cy.get(this.goToCart).should('be.visible');
-    //     cy.get(this.goToCart).click();
-    //     // 
-    //     // cy.get('[data-test="shopping-cart-link"]').click();
-    //     // cy.get(this.goToCart).should('content','[data-test="shopping-cart-link"]').click();
-    // }
 }
 export default addProduct;

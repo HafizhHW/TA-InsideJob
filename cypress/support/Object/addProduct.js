@@ -9,7 +9,12 @@ class addProduct {
     postalCode = '[data-test="postalCode"]';
     continue = '[data-test="continue"]';
     finish = '[data-test="finish"]';
+    btn_menu = '.bm-burger-button'
 
+    // verivikasi btn menu
+    klikMenu() {
+        cy.get(this.btn_menu).click()
+    }
 
     // Aksi Checkout
 

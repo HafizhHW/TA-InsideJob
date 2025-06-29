@@ -11,10 +11,16 @@ describe('cek login dulu', () => {
         // cy.url().should('include', '/inventory.html'); // Menunggu URL berubah
     });
 
+    it('Verifikasi btn Menu', () => {
+        // Pastikan untuk melakukan login sebelum memverifikasi
+        addproduct.klikMenu();   // Klik menu setelah login
+    })
+
     it('Tambah Product', () => {
         addproduct.additem();
         // addproduct.goToCart(); // Pergi ke keranjangtc   
         // addproduct.checkout(); // Lanjut ke checkout
     });
+
 
 });

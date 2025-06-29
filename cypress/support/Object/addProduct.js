@@ -12,6 +12,7 @@ class addProduct {
     btn_menu = '.bm-burger-button'
     btn_logo = '.app_logo'
     check_filter = '[data-test="product-sort-container"]'
+    get_onesie = '[data-test="item-2-title-link"] > [data-test="inventory-item-name"]'
 
     // verivikasi btn menu
     klikMenu() {
@@ -21,6 +22,7 @@ class addProduct {
         // cy.wait(5000)
         cy.get(this.check_filter).select('za')
         // cy.wait(5000)
+        cy.get(this.get_onesie).click()
     }
 
     // Aksi Checkout

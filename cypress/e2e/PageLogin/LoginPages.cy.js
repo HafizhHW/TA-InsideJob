@@ -9,31 +9,24 @@ describe('Login Pages', () => {
     })
 
     it('Login', () => {
-    Log.aksiLogin();
+        Log.aksiLogin();  // Lakukan login
+    })
+
+    it('Verifikasi btn Menu', () => {
+        // Pastikan untuk melakukan login sebelum memverifikasi
+        Log.aksiLogin();  // Lakukan login lagi
+        Log.klikMenu();   // Klik menu setelah login
     })
 })
 
-
-// describe('Login Pages', () => {
-//   it('Login passes', () => {
-//     cy.visit('https://www.saucedemo.com/')
-//     // cy.get('[data-test="username"]').type('standard_user')
-//     // cy.get('[data-test="password"]').type('secret_sauce')
-//     // cy.get('[data-test="login-button"]').click()
-//   })
-// })
-
-// import Logins from "../../support/Object/PageLogin/LoginPages";
-
-// const logins = new Logins();
-
 // describe('Login Pages', () => {
 //     beforeEach(() => {
-//         cy.visit('https://www.saucedemo.com/');
-//     });
+//         cy.visit('https://www.saucedemo.com/')
+//     })
 
-//     it('should login successfully', () => {
-//         logins.aksiLogin();
-//         cy.get('.inventory_list').should('be.visible'); // Memverifikasi bahwa login berhasil
-//     });
-// });
+//     it('Login', () => {
+//     Log.aksiLogin();
+//     Log.klikMenu();
+//     })
+
+// })

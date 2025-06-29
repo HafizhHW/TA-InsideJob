@@ -6,6 +6,8 @@ class Logins {
     fldPassword = '[data-test="password"]'
     btnLogin = '[data-test="login-button"]'
     errMsgContainer = '.error-message-container'
+    btn_menu = '.bm-burger-button'
+    // btn_menu = '#react-burger-menu-btn'
 
     // Aksi Login
     aksiLogin(){
@@ -15,5 +17,8 @@ class Logins {
         cy.get(this.btnLogin).click()
     }
 
+    klikMenu() {
+    cy.get(this.btn_menu).click()
+    }
 }
 export default Logins

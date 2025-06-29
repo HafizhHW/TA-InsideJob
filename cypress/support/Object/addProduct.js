@@ -18,9 +18,9 @@ class addProduct {
         cy.get(this.btn_menu).click()
         cy.get(this.btn_logo).click()
         cy.get(this.check_filter).select('lohi')
-        cy.wait(5000)
+        // cy.wait(5000)
         cy.get(this.check_filter).select('za')
-        cy.wait(5000)
+        // cy.wait(5000)
     }
 
     // Aksi Checkout

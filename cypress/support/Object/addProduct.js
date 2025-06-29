@@ -10,10 +10,17 @@ class addProduct {
     continue = '[data-test="continue"]';
     finish = '[data-test="finish"]';
     btn_menu = '.bm-burger-button'
+    btn_logo = '.app_logo'
+    check_filter = '[data-test="product-sort-container"]'
 
     // verivikasi btn menu
     klikMenu() {
         cy.get(this.btn_menu).click()
+        cy.get(this.btn_logo).click()
+        cy.get(this.check_filter).select('lohi')
+        cy.wait(5000)
+        cy.get(this.check_filter).select('za')
+        cy.wait(5000)
     }
 
     // Aksi Checkout

@@ -11,7 +11,7 @@ describe('cek login dulu', () => {
         // cy.url().should('include', '/inventory.html'); // Menunggu URL berubah
     });
 
-    it('Verifikasi btn Menu', () => {
+    it('Verifikasi btn', () => {
         // Pastikan untuk melakukan login sebelum memverifikasi
         addproduct.klikMenu();   // Klik menu setelah login
     })
